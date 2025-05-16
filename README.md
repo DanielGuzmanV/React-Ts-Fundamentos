@@ -1,13 +1,13 @@
-# React + TypeScript + Vite
-
-Plantilla que proporciona una configuracion minima para conseguir que React funcione en Vite con HMR y algunas reglas de ESLint.
-
 ## Curso de React con Typescript
 Curso realizado por `HolaMundo`
 - [Canal de HolaMundo](https://www.youtube.com/@HolaMundoDev)
 - [Video del curso de React](https://www.youtube.com/watch?v=yIr_1CasXkM&t=1s)
 
 Todos los creditos al canal de `HolaMundo`
+
+# React + TypeScript + Vite
+
+Plantilla que proporciona una configuracion minima para conseguir que React funcione en Vite con HMR y algunas reglas de ESLint.
 
 Currently, two official plugins are available:
 

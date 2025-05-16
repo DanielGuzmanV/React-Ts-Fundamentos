@@ -1,6 +1,13 @@
 import { Fragment } from "react/jsx-runtime";
 
-function Card() {
+interface CardProps  {
+  bodyCard: string;
+}
+
+function Card(props: CardProps) {
+
+  const { bodyCard } = props;
+
   return (
     <div className="card"
       style={{
@@ -9,7 +16,7 @@ function Card() {
       }}
     >
       <div className="card-body" style={{backgroundColor: 'aquamarine'}}>
-        < CardBody/>
+        { bodyCard }
       </div>
     </div>
   );

@@ -2,14 +2,18 @@ import { useState } from "react";
 
 type Props = {
   dataProps: string[];
+  onSelect?: (elemento: string) => void;
 }
 
-function List({dataProps}: Props) {
+function List({dataProps, onSelect}: Props) {
   const [index, setIndex] = useState(0);
 
   const handleClick = (event: string, indice: number) => {
+    
     setIndex(indice);
-    console.log('Se preciono sobre:', event);
+
+    onSelect?.(event);
+
   }
 
   return (

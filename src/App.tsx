@@ -4,6 +4,9 @@ import List from "./components/List";
 function App() {
   const listString = ['JavaScript', 'TypeScript', 'React', 'NodeJs'];
   
+  // Agregar elementos a "listString2" si es necesario
+  const listString2: string[] = [];
+  
   const handleSelect1 = (selectElement: string) => {
     console.log('Se imprimio en consola:', selectElement)
   }
@@ -12,11 +15,20 @@ function App() {
     console.log('Mostrando:', selectElement)
   }
 
+  // Podemos usar el "Short Circuit Operator"
+  const content = listString.length !== 0 && (
+    <List dataProps={listString} onSelect={handleSelect1}/>
+  );
+
   return (
     <Card>
       <CardBody title="Hola React" text="Esto es un parrafo usando React"/>
-      <List dataProps={listString} onSelect={handleSelect1}/>
-      <List dataProps={listString} onSelect={handleSelect2}/>
+      {content}
+
+      {listString2.length !== 0 
+        ? (<List dataProps={listString2} onSelect={handleSelect2}/>)
+        : 'Lista sin elementos'
+      }
     </Card>
   )
 

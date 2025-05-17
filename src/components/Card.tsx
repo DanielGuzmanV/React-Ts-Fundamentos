@@ -1,12 +1,13 @@
+import type { ReactNode } from "react";
 import { Fragment } from "react/jsx-runtime";
 
 interface CardProps  {
-  bodyCard: string;
+  children: ReactNode;
 }
 
 function Card(props: CardProps) {
 
-  const { bodyCard } = props;
+  const { children } = props;
 
   return (
     <div className="card"
@@ -16,28 +17,28 @@ function Card(props: CardProps) {
       }}
     >
       <div className="card-body" style={{backgroundColor: 'aquamarine'}}>
-        { bodyCard }
+        { children }
       </div>
     </div>
   );
 
 }
 
-function CardBody() {
+// ============================================================
+interface CardBodyProps {
+  title: string;
+  text?: string;
+}
+
+export function CardBody(props: CardBodyProps) {
   // tambien podemos usar <></> en ves de <Fragment></Fragment> asi no importamos
   // import { Fragment } from "react/jsx-runtime";
+
+  const {title, text} = props;
   return (
     <Fragment>
-      <h5 className="card-title" style={{color: 'red'}}>Titulo de la targeta</h5>
-
-      <p className="card-text">
-        Some quick example text to build on the card title and make
-        up the bulk of the card's content.
-      </p>
-
-      <a href="#" className="btn btn-primary">
-        Go somewhere
-      </a>
+      <h5 className="card-title" style={{color: 'red'}}>{title}</h5>
+      <p className="card-text">{text}</p>
     </Fragment>
   )
 }

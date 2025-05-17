@@ -3,10 +3,18 @@ type Props = {
 }
 
 function List({dataProps}: Props) {
+
+  const handleClick = (event: string) => {
+    console.log('Se preciono sobre:', event);
+    alert(event);
+  }
+
   return (
     <ul className="list-group">
       {dataProps.map( (elementos) => (
-        <li key={elementos} className="list-group-item">{elementos}</li>
+        <li onClick={ () => handleClick(elementos)} key={elementos} className="list-group-item">
+          {elementos}
+        </li>
       ))}
 
     </ul>

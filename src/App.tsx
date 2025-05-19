@@ -25,10 +25,10 @@ function App() {
     <Card>
       <CardTitle title="Lista dinamica"/>
 
-      <Button onClickButton={addHandleClick}>
+      <Button onClickButton={addHandleClick} isLoadingBtn = {false}>
         Agregar
       </Button>
-      <Button onClickButton={delHandleClick}>
+      <Button onClickButton={delHandleClick} isLoadingBtn = {true}>
         Eliminar
       </Button>
 

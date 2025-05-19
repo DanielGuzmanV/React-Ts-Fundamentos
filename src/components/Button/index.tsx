@@ -1,28 +1,30 @@
 import type { ReactNode } from "react"
-import stylesCss from "./Button.module.css"
+import styled from "styled-components"
+
+type BtnProps = {
+  isloadingBtn: boolean
+}
+
+const Btn = styled.button <BtnProps>`
+  background-color: ${(props) => props.isloadingBtn ? 'blue':'red'};
+  padding: 25px 30px;
+  margin: 4px;
+`;
 
 type Props = {
   children: ReactNode;
   onClickButton: () => void;
+  isLoadingBtn: boolean
 }
 
-function Button({children, onClickButton}: Props) {
-
-  const classNameStyle = [
-    `btn btn-primary`, 
-    stylesCss.button, 
-    stylesCss.padded
-  ].join(' ');
+function Button({children, onClickButton, isLoadingBtn}: Props) {
 
   return (
-    <button
-      onClick={onClickButton}
-      type="button" 
-      className= {classNameStyle}
-      
+    <Btn
+      onClick={onClickButton} isloadingBtn = {isLoadingBtn}
     >
       {children}
-    </button>
+    </Btn>
   )
 }
 

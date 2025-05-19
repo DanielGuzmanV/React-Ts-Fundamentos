@@ -17,11 +17,16 @@ function List({dataProps, onSelect}: Props) {
   }
 
   return (
-    <ul className="list-group">
+    <ul className="list-group" 
+        style={{
+          margin: '10px'
+        }}
+    >
+
       {dataProps.map( (elementos, idx) => (
-        <li onClick={ 
-            () => handleClick(elementos, idx)
-            } 
+
+        <li 
+          onClick={() => handleClick(elementos, idx)} 
           key={elementos} 
           className={`list-group-item ${index == idx ? "active" : ""}`}
         >

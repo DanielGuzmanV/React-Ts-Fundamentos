@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+import stylesCss from "./Button.module.css"
 
 type Props = {
   children: ReactNode;
@@ -6,14 +7,19 @@ type Props = {
 }
 
 function Button({children, onClickButton}: Props) {
+
+  const classNameStyle = [
+    `btn btn-primary`, 
+    stylesCss.button, 
+    stylesCss.padded
+  ].join(' ');
+
   return (
     <button
       onClick={onClickButton}
       type="button" 
-      className= "btn btn-primary"
-      style={{
-        margin: '4px'
-      }}
+      className= {classNameStyle}
+      
     >
       {children}
     </button>

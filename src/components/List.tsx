@@ -6,15 +6,14 @@ type Props = {
 }
 
 function List({dataProps, onSelect}: Props) {
+
+  // Codigo para seleccionar un elemento en la lista
   const [index, setIndex] = useState(0);
-
-  const handleClick = (event: string, indice: number) => {
-    
+  const handleClick = (elemento: string, indice: number) => {
     setIndex(indice);
-
-    onSelect?.(event);
-
+    onSelect?.(elemento);
   }
+  // ==========================================================
 
   return (
     <ul className="list-group" 

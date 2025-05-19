@@ -3,18 +3,19 @@ import type { ReactNode } from "react"
 type Props = {
   children: ReactNode;
   onClickButton: () => void;
-  isLoadingButton: boolean;
 }
 
-function Button({children, isLoadingButton, onClickButton}: Props) {
+function Button({children, onClickButton}: Props) {
   return (
     <button
       onClick={onClickButton}
-      disabled = {isLoadingButton}
       type="button" 
-      className={`btn btn-${isLoadingButton ? 'secondary': 'primary'}`}
+      className= "btn btn-primary"
+      style={{
+        margin: '4px'
+      }}
     >
-      { isLoadingButton ? 'Cargando boton...' : children}
+      {children}
     </button>
   )
 }

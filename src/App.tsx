@@ -1,50 +1,42 @@
-import Card, {CardBody} from "./components/Card"
+import Card, {CardTitle} from "./components/Card"
 import List from "./components/List";
 import Button from "./components/Button";
 import { useState } from "react";
 
 function App() {
-
-  // Realizamos el "useState" para el button
-  const [isLoading, setIsLoading] = useState(false);
-  const changeHandleClick = () => setIsLoading(!isLoading);
-
-
   const listString = ['JavaScript', 'TypeScript', 'React', 'NodeJs'];
-  // Agregar elementos a "listString2" si es necesario
-  const listString2: string[] = [];
+  const [data, setData] = useState(listString);
   
-  const handleSelect1 = (selectElement: string) => {
+  // Vemos el elemento seleccionado en consola:
+  const handleSelect = (selectElement: string) => {
     console.log('Se imprimio en consola:', selectElement)
   }
-  const handleSelect2 = (selectElement: string) => {
-    console.log('Mostrando:', selectElement)
-  }
 
-  const content = listString2.length !== 0 
-    ? (<List dataProps={listString2} onSelect={handleSelect2}/>)
-    : 'Primera lista sin elementos:'
-  
+  // Agregar elementos:
+  const addHandleClick = () => {
+    return setData([...data, 'Values React'])
+  }
+  // Eliminar elementos:
+  const delHandleClick = () => {
+    return setData(data.slice(0, -1));
+  }
   
   return (
     <Card>
-      <CardBody title="Hola React" text="Esto es un parrafo usando React"/>
-      {content}
+      <CardTitle title="Lista dinamica"/>
 
-      {/*  Podemos usar el "Short Circuit Operator" */}
-      {listString.length !== 0 && (
-        <List dataProps={listString} onSelect={handleSelect1}/>
-      )}
-
-
-      <Button isLoadingButton = {isLoading} onClickButton={changeHandleClick}>
-        Hola react
+      <Button onClickButton={addHandleClick}>
+        Agregar
       </Button>
+      <Button onClickButton={delHandleClick}>
+        Eliminar
+      </Button>
+
+      <List dataProps={data} onSelect={handleSelect}/>
 
     </Card>
   )
 
-  // return <CardBody title="Hola React" text="Esto es un texto usando React"/>
 }
 
 export default App

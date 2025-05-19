@@ -30,7 +30,7 @@ interface CardBodyProps {
   text?: string;
 }
 
-export function CardBody(props: CardBodyProps) {
+export function CardTitle(props: CardBodyProps) {
   // tambien podemos usar <></> en ves de <Fragment></Fragment> asi no importamos
   // import { Fragment } from "react/jsx-runtime";
 

@@ -1,3 +1,9 @@
+
+import Card from "./components/Card"
+
+function App() {
+  return <Card/>
+
 import './App.css'
 import MyRoutes  from './routers/routes'
 
@@ -11,6 +17,7 @@ function App() {
     </div>
   )
   
+
 }
 
 export default App

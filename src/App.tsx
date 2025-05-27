@@ -1,5 +1,5 @@
 import './App.css'
-import Saludar from "./components/Saludo"
+import MyRoutes  from './routers/routes'
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <header>
         <h1 className='title'>Main Principal</h1>
       </header>
-      <Saludar/>
+      <MyRoutes/>
     </div>
   )
   

@@ -1,7 +1,16 @@
-import Saludar from "./components/saludo"
+import './App.css'
+import Saludar from "./components/Saludo"
 
 function App() {
-  return <Saludar/>
+  return (
+    <div>
+      <header>
+        <h1 className='title'>Main Principal</h1>
+      </header>
+      <Saludar/>
+    </div>
+  )
+  
 }
 
 export default App

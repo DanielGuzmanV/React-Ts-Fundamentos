@@ -11,6 +11,7 @@ function ContentButtons() {
   return (
     <div>
       <button onClick={ () => handleSaludar("/saludo")}>Saludar</button>
+      <button onClick={ () => handleSaludar("/card")}>Tarjeta</button>
 
     </div>
   )

@@ -1,8 +1,7 @@
-import Titulo from "./Titulo"
+import Saludar from "./components/saludo"
 
 function App() {
-  return <Titulo/>
-
+  return <Saludar/>
 }
 
 export default App

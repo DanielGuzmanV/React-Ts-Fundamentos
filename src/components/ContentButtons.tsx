@@ -23,9 +23,9 @@ function ContentButtons() {
         <li>
           <button 
             className="btnStyle"
-            onClick={ () => handleSaludar("/card")}
+            onClick={ () => handleSaludar("/cardList")}
           >
-            Tarjeta
+            Tarjeta - Listas
           </button>
         </li>
       </ul>

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import LeadingPage from "../pages/LeadingPage";
 import Saludar from "../pages/Saludo";
-import Card from "../pages/Card";
+import CardList from "../pages/CardView";
 
 function MyRoutes() {
   return (
@@ -11,7 +11,7 @@ function MyRoutes() {
         {/* Lista de rutas: */}
         <Route path="/" element = {<LeadingPage/>}/>
         <Route path="/saludo" element = {<Saludar/>}/>
-        <Route path="/card" element = {<Card/>}/>
+        <Route path="/cardList" element = {<CardList/>}/>
 
 
       </Routes>

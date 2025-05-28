@@ -23,6 +23,14 @@ function ContentButtons() {
         <li>
           <button 
             className="btnStyle"
+            onClick={ () => handleSaludar("/card")}
+          >
+            Tarjeta
+          </button>
+        </li>
+        <li>
+          <button 
+            className="btnStyle"
             onClick={ () => handleSaludar("/cardList")}
           >
             Tarjeta - Listas

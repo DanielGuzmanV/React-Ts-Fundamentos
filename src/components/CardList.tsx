@@ -1,52 +1,46 @@
-import { useState } from "react";
-import Button from "./Button";
-import Card, { CardBody } from "./Card"
-import List from "./List";
+import type { ReactNode } from "react";
+import { Fragment } from "react/jsx-runtime";
 
+interface CardProps  {
+  children: ReactNode;
+}
 
-function CardList() {
+function Card(props: CardProps) {
 
-  // Arrays:
-  const arrString1: string[] = ['JavaScript', 'Typescript', 'React', 'NodeJs'];
-  const arrString2: string[] = [];
-  
-  // Funciones para seleccionar un elemento:
-  const handleSelect1 = (selectElement: string) => {
-    console.log('Se imprimio en consola:', selectElement)
-  }
-  const handleSelect2 = (selectElement: string) => {
-    console.log('Mostrando:', selectElement)
-  }
-
-  // Verifcarmos con un ternario si la lista esta vacia o no:
-  const contentValue = arrString2.length !== 0
-  ? (< List dataProps={arrString2} onSelect={handleSelect2}/>)
-  : (<p>Primera lista sin elementos</p>)
-
-  // Realizamos un "useState" para el button:
-  const [isLoading, setIsLoading] = useState(false);
-  const changeHandleClick = function() {
-    return setIsLoading(!isLoading);
-  }
+  const { children } = props;
 
   return (
-    < Card>
-      
-      <CardBody title="Listas en React" text="Uso de listas basicas en React"/>
+    <div className="card"
+      style={{
+        width: '400px',
+        margin: '20px'
+      }}
+    >
+      <div className="card-body" style={{backgroundColor: 'aquamarine'}}>
+        { children }
+      </div>
+    </div>
+  );
 
-      {contentValue}
+}
 
-      {/* Tambien podemos usar "short circuit operator" */}
-      {arrString1.length !== 0 && (
-        < List dataProps={arrString1} onSelect={handleSelect1}/>
-      )}
+// ============================================================
+interface CardBodyProps {
+  title: string;
+  text?: string;
+}
 
-      < Button isLoadingButton={isLoading} onClickButton={changeHandleClick}>
-        Enviar datos
-      </Button>
+export function CardBody(props: CardBodyProps) {
+  // tambien podemos usar <></> en ves de <Fragment></Fragment> asi no importamos
+  // import { Fragment } from "react/jsx-runtime";
 
-    </Card>
+  const {title, text} = props;
+  return (
+    <Fragment>
+      <h5 className="card-title" style={{color: 'red'}}>{title}</h5>
+      <p className="card-text">{text}</p>
+    </Fragment>
   )
 }
 
-export default CardList
+export default Card;

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import '../components/ContentButtons.css'
 
 function ContentButtons() {
 
@@ -9,15 +10,27 @@ function ContentButtons() {
   }
 
   return (
-    <ul style={{listStyle: 'none'}}>
-      <li>
-        <button onClick={ () => handleSaludar("/saludo")}>Saludar</button>
-      </li>
-      <li>
-        <button onClick={ () => handleSaludar("/card")}>Tarjeta</button>
-      </li>
+    <div className="contentStyle">
+      <ul className="ulStyle">
+        <li>
+          <button 
+            className="btnStyle"
+            onClick={ () => handleSaludar("/saludo")}
+          >
+            Saludar
+          </button>
+        </li>
+        <li>
+          <button 
+            className="btnStyle"
+            onClick={ () => handleSaludar("/card")}
+          >
+            Tarjeta
+          </button>
+        </li>
+      </ul>
+    </div>
 
-    </ul>
   )
 }
 

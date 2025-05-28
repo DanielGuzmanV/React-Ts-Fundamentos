@@ -1,13 +1,7 @@
-import type { ReactNode } from "react";
 import { Fragment } from "react/jsx-runtime";
 
-interface CardProps  {
-  children: ReactNode;
-}
 
-function Card(props: CardProps) {
-
-  const { children } = props;
+function Card() {
 
   return (
     <div className="card"
@@ -17,7 +11,7 @@ function Card(props: CardProps) {
       }}
     >
       <div className="card-body" style={{backgroundColor: 'aquamarine'}}>
-        { children }
+      
       </div>
     </div>
   );

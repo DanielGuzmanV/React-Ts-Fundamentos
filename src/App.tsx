@@ -3,7 +3,7 @@ import MyRoutes  from './routers/routes'
 
 function App() {
   return (
-    <div className="d-flex flex-column align-items-center justify-content-center min-vh-100">
+    <div className="divBody">
       <header>
         <h1 className='title'>Main Principal</h1>
       </header>

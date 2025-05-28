@@ -9,11 +9,15 @@ function ContentButtons() {
   }
 
   return (
-    <div>
-      <button onClick={ () => handleSaludar("/saludo")}>Saludar</button>
-      <button onClick={ () => handleSaludar("/card")}>Tarjeta</button>
+    <ul style={{listStyle: 'none'}}>
+      <li>
+        <button onClick={ () => handleSaludar("/saludo")}>Saludar</button>
+      </li>
+      <li>
+        <button onClick={ () => handleSaludar("/card")}>Tarjeta</button>
+      </li>
 
-    </div>
+    </ul>
   )
 }
 

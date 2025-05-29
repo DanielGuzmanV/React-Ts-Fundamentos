@@ -4,6 +4,7 @@ import Saludar from "../pages/Saludo";
 import CardView from "../pages/CardView";
 import Card from "../pages/Card";
 import CardButtonsView from "../pages/CardButtonsView";
+import ButtonCustomView from "../pages/ButtonCustomView";
 
 function MyRoutes() {
   return (
@@ -16,6 +17,7 @@ function MyRoutes() {
         <Route path="/card" element = {<Card/>}/>
         <Route path="/cardList" element = {<CardView/>}/>
         <Route path="/cardButton" element = {<CardButtonsView/>}/>
+        <Route path="/buttonCustom" element = {<ButtonCustomView/>}/>
 
 
       </Routes>

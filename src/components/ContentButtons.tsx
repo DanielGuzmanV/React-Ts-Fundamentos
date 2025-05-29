@@ -44,6 +44,14 @@ function ContentButtons() {
             Tarjeta - Buttons
           </button>
         </li>
+        <li>
+          <button 
+            className="btnStyle"
+            onClick={ () => handleSaludar("/buttonCustom")}
+          >
+            Buttons Custom
+          </button>
+        </li>
       </ul>
     </div>
 

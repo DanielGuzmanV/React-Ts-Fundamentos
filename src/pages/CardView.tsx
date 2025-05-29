@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Button from "../components/Button";
-import Card, { CardBody } from "../components/CardList"
-import List from "../components/List";
+import Button from "../components/cardview_list/Button";
+import CardList, { CardBody } from "../components/cardview_list/CardList"
+import List from "../components/cardview_list/List";
 
 
-function CardList() {
+function CardView() {
 
   // Arrays:
   const arrString1: string[] = ['JavaScript', 'Typescript', 'React', 'NodeJs'];
@@ -30,7 +30,7 @@ function CardList() {
   }
 
   return (
-    < Card>
+    < CardList>
       
       <CardBody title="Listas en React" text="Uso de listas basicas en React"/>
 
@@ -45,8 +45,8 @@ function CardList() {
         Enviar datos
       </Button>
 
-    </Card>
+    </CardList>
   )
 }
 
-export default CardList
+export default CardView

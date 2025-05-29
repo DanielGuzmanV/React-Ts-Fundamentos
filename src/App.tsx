@@ -13,7 +13,6 @@ function App() {
   )
   
 
-  // return <CardBody title="Hola React" text="Esto es un texto usando React"/>
 }
 
 

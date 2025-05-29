@@ -5,7 +5,7 @@ type Props = {
   onSelect?: (elemento: string) => void;
 }
 
-function List({dataProps, onSelect}: Props) {
+function ListButtons({dataProps, onSelect}: Props) {
 
   // Codigo para seleccionar un elemento en la lista
   const [index, setIndex] = useState(0);
@@ -16,7 +16,7 @@ function List({dataProps, onSelect}: Props) {
   // ==========================================================
 
   return (
-    <ul className="list-group"
+    <ul
         style={{
           margin: '10px'
         }}
@@ -27,7 +27,7 @@ function List({dataProps, onSelect}: Props) {
         <li 
           onClick={() => handleClick(elementos, idx)} 
           key={elementos} 
-          className={`list-group-item ${index == idx ? "active" : ""}`}
+          className={` ${index == idx ? "active" : ""}`}
         >
           {elementos}
         </li>
@@ -37,4 +37,4 @@ function List({dataProps, onSelect}: Props) {
   )
 }
 
-export default List
+export default ListButtons

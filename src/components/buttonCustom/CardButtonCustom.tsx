@@ -5,7 +5,7 @@ interface CardProps  {
   children: ReactNode;
 }
 
-function Card(props: CardProps) {
+function CardButtonCustom(props: CardProps) {
 
   const { children } = props;
 
@@ -43,4 +43,4 @@ export function CardTitle(props: CardBodyProps) {
   )
 }
 
-export default Card;
+export default CardButtonCustom;

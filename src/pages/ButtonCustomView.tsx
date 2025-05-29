@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Card, { CardTitle } from "./Card"
-import Button from "./Button";
-import List from "./Button/List";
+import CardButtonCustom, { CardTitle } from "../components/buttonCustom/CardButtonCustom"
+import Button from "../components/buttonCustom/Button";
+import ListButtonCustom from "../components/buttonCustom/ListButtonCuston";
 
 
 function ButtonCustomView() {
@@ -25,7 +25,7 @@ function ButtonCustomView() {
 
 
   return (
-  <Card>
+  <CardButtonCustom>
     <CardTitle title="Botones dinamicos"/>
 
     <Button onClickButton={addHandleClick} isLoadingBtn = {false}>
@@ -36,9 +36,9 @@ function ButtonCustomView() {
       Eliminar
     </Button>
 
-    <List dataProps={data} onSelect={handleSelect}/>
+    <ListButtonCustom dataProps={data} onSelect={handleSelect}/>
 
-  </Card>
+  </CardButtonCustom>
   )
 }
 

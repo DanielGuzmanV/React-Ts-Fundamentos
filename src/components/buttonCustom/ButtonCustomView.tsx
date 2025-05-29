@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Card, { CardTitle } from "../Card"
-import Button from "../Button";
-import List from "../List";
+import Card, { CardTitle } from "./Card"
+import Button from "./Button";
+import List from "./Button/List";
 
 
 function ButtonCustomView() {

@@ -5,7 +5,7 @@ type Props = {
   onSelect?: (elemento: string) => void;
 }
 
-function List({dataProps, onSelect}: Props) {
+function ListButtons({dataProps, onSelect}: Props) {
 
   // Codigo para seleccionar un elemento en la lista
   const [index, setIndex] = useState(0);
@@ -37,4 +37,4 @@ function List({dataProps, onSelect}: Props) {
   )
 }
 
-export default List
+export default ListButtons

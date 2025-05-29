@@ -5,7 +5,7 @@ interface CardProps  {
   children: ReactNode;
 }
 
-function Card(props: CardProps) {
+function CardButtonsBody(props: CardProps) {
 
   const { children } = props;
 
@@ -30,7 +30,7 @@ interface CardBodyProps {
   text?: string;
 }
 
-export function CardTitle(props: CardBodyProps) {
+export function CardButtonsTitle(props: CardBodyProps) {
   // tambien podemos usar <></> en ves de <Fragment></Fragment> asi no importamos
   // import { Fragment } from "react/jsx-runtime";
 
@@ -43,4 +43,4 @@ export function CardTitle(props: CardBodyProps) {
   )
 }
 
-export default Card;
+export default CardButtonsBody;

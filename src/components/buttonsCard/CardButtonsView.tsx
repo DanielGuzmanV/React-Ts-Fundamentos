@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Button from "./Button"
-import Card, { CardTitle } from "./Card"
-import List from "./List"
+import CardButtonsBody, { CardButtonsTitle } from "./CardButtonsBody"
+import ListButtons from "./ListButtons"
 
 
-function CardButtons() {
+function CardButtonsView() {
   const listString: string[] = ['Javascript', 'Typescript', 'React', 'NodeJs'];
 
   const [data, setDataList] = useState(listString);
@@ -21,10 +21,10 @@ function CardButtons() {
 
 
   return (
-    <Card>
+    <CardButtonsBody>
 
     {/* Titulo: */}
-    <CardTitle title="Botones"/>
+    <CardButtonsTitle title="Botones"/>
 
     {/* Botones: */}
     <Button onClickButton={addHandleClick}>
@@ -35,10 +35,10 @@ function CardButtons() {
     </Button>
 
     {/* Lista: */}
-    <List dataProps={data} />
+    <ListButtons dataProps={data} />
 
-    </Card>
+    </CardButtonsBody>
   )
 }
 
-export default CardButtons
+export default CardButtonsView

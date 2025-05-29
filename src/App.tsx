@@ -1,9 +1,9 @@
-import CardButtons from "./components/buttonsCard/CardButtons";
+import CardButtonsView from "./components/buttonsCard/CardButtonsView";
 
 function App() {
   
   return (
-    <CardButtons/>
+    <CardButtonsView/>
   )
 
 }

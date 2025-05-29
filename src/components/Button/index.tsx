@@ -9,7 +9,6 @@ type Props = {
 function Button({children, onClickButton}: Props) {
 
   const classNameStyle = [
-    `btn btn-primary`, 
     stylesCss.button, 
     stylesCss.padded
   ].join(' ');

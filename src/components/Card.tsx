@@ -10,7 +10,7 @@ function Card(props: CardProps) {
   const { children } = props;
 
   return (
-    <div className="card"
+    <div className=""
       style={{
         width: '400px',
         margin: '20px'
@@ -37,8 +37,8 @@ export function CardTitle(props: CardBodyProps) {
   const {title, text} = props;
   return (
     <Fragment>
-      <h5 className="card-title" style={{color: 'red'}}>{title}</h5>
-      <p className="card-text">{text}</p>
+      <h5 className="" style={{color: 'red'}}>{title}</h5>
+      <p className="">{text}</p>
     </Fragment>
   )
 }

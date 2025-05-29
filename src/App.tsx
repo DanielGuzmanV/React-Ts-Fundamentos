@@ -1,4 +1,4 @@
-import CardButtons from "./components/CardButtons";
+import CardButtons from "./components/buttonsCard/CardButtons";
 
 function App() {
   

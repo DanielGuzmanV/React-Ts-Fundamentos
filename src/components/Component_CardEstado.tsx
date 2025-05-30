@@ -4,9 +4,9 @@ type Props = {
   estado: boolean;
 }
 
-function Component_Card({estado}: Props) {
+function ComponentCardEstado({estado}: Props) {
   return (
-    <div className="card">
+    <div className="mycard">
       <h1>Primer Card</h1>
 
       <p>Detalles de Card</p>
@@ -17,7 +17,7 @@ function Component_Card({estado}: Props) {
   )
 }
 
-export default Component_Card
+export default ComponentCardEstado
 
 
 

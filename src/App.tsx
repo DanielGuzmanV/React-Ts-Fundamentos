@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="divBody">
       <header>
-        <h1 className='title'>Main Principal</h1>
+        <h1 className='title'>Fundamentos basicos</h1>
       </header>
       <MyRoutes/>
     </div>

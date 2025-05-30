@@ -1,9 +1,9 @@
-import ContentButtons from "../components/ContentButtons"
+import ButtonsHolaMundo from "../components/ButtonsHolaMundo"
 
 function MainHolamundo() {
   return (
     <div>
-      <ContentButtons/>
+      <ButtonsHolaMundo/>
     </div>
   )
 }

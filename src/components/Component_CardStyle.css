@@ -1,0 +1,22 @@
+
+.card {
+  background-color: rgb(12, 226, 246);
+  color: white;
+  padding: 20px;
+}
+
+.imagen {
+  width: 200px;
+}
+
+.on {
+  background-color: rgb(28, 152, 8);
+}
+
+.off {
+  background-color: rgb(224, 34, 199);
+}
+
+
+
+

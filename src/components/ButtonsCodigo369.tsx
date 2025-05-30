@@ -26,6 +26,11 @@ function ButtonsCodigo369() {
             Card - Estado
           </button>
         </li>
+        <li>
+          <button className="btnStyle" onClick={() => handleRoutes('/cardArray')}>
+            Card - Array
+          </button>
+        </li>
         
       </ul>
     </div>

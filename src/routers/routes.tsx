@@ -10,6 +10,7 @@ import MainCodigo369 from "../pages/MainCodigo369";
 import Datos from "../pages/Datos"
 import Usuario from "../pages/Usuario";
 import CardEstado from "../pages/CardEstado";
+import CardArray from "../pages/CardArray";
 
 function MyRoutes() {
   return (
@@ -30,6 +31,7 @@ function MyRoutes() {
         <Route path="/componentDatos" element = {<Datos/>}/>
         <Route path="/usuario" element = {<Usuario/>}/>
         <Route path="/cardEstado" element = {<CardEstado/>}/>
+        <Route path="/cardArray" element = {<CardArray/>}/>
 
 
       </Routes>

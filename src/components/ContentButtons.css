@@ -1,11 +1,14 @@
 
 .btnStyle {
-  width: 150px;
-  height: 40px;
+  min-width: 170px;
+  height: auto;
+  padding: 10px;
   display: inline-block;
-
   margin: 10px;
   border-radius: 10px ;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
 }
 
 .ulStyle {

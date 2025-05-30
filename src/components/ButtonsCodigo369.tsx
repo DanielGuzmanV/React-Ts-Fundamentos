@@ -31,6 +31,11 @@ function ButtonsCodigo369() {
             Card - Array
           </button>
         </li>
+        <li>
+          <button className="btnStyle" onClick={() => handleRoutes('/hooks')}>
+            Hooks - basic
+          </button>
+        </li>
         
       </ul>
     </div>

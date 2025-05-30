@@ -11,6 +11,7 @@ import Datos from "../pages/Datos"
 import Usuario from "../pages/Usuario";
 import CardEstado from "../pages/CardEstado";
 import CardArray from "../pages/CardArray";
+import Hooks from "../pages/Hooks";
 
 function MyRoutes() {
   return (
@@ -32,6 +33,7 @@ function MyRoutes() {
         <Route path="/usuario" element = {<Usuario/>}/>
         <Route path="/cardEstado" element = {<CardEstado/>}/>
         <Route path="/cardArray" element = {<CardArray/>}/>
+        <Route path="/hooks" element = {<Hooks/>}/>
 
 
       </Routes>

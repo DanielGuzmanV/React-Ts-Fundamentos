@@ -21,6 +21,11 @@ function ButtonsCodigo369() {
             Datos - Usuario
           </button>
         </li>
+        <li>
+          <button className="btnStyle" onClick={() => handleRoutes('/cardEstado')}>
+            Card - Estado
+          </button>
+        </li>
         
       </ul>
     </div>

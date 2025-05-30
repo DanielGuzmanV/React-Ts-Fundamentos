@@ -7,8 +7,9 @@ import CardButtonsView from "../pages/CardButtonsView";
 import ButtonCustomView from "../pages/ButtonCustomView";
 import MainButtons from "../components/MainButtons";
 import MainCodigo369 from "../pages/MainCodigo369";
-import Datos from "../pages/Datos";
+import Datos from "../pages/Datos"
 import Usuario from "../pages/Usuario";
+import CardEstado from "../pages/CardEstado";
 
 function MyRoutes() {
   return (
@@ -28,6 +29,7 @@ function MyRoutes() {
         <Route path="/codigo369" element = {<MainCodigo369/>}/>
         <Route path="/componentDatos" element = {<Datos/>}/>
         <Route path="/usuario" element = {<Usuario/>}/>
+        <Route path="/cardEstado" element = {<CardEstado/>}/>
 
 
       </Routes>

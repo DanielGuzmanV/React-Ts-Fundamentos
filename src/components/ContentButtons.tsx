@@ -5,7 +5,7 @@ function ContentButtons() {
 
   const navigate = useNavigate();
 
-  const handleSaludar = function(ruta: string) {
+  const handleRoutes = function(ruta: string) {
     navigate(ruta);
   }
 
@@ -15,7 +15,7 @@ function ContentButtons() {
         <li>
           <button 
             className="btnStyle"
-            onClick={ () => handleSaludar("/saludo")}
+            onClick={ () => handleRoutes("/saludo")}
           >
             Saludar
           </button>
@@ -23,7 +23,7 @@ function ContentButtons() {
         <li>
           <button 
             className="btnStyle"
-            onClick={ () => handleSaludar("/card")}
+            onClick={ () => handleRoutes("/card")}
           >
             Tarjeta
           </button>
@@ -31,7 +31,7 @@ function ContentButtons() {
         <li>
           <button 
             className="btnStyle"
-            onClick={ () => handleSaludar("/cardList")}
+            onClick={ () => handleRoutes("/cardList")}
           >
             Tarjeta - Listas
           </button>
@@ -39,7 +39,7 @@ function ContentButtons() {
         <li>
           <button 
             className="btnStyle"
-            onClick={ () => handleSaludar("/cardButton")}
+            onClick={ () => handleRoutes("/cardButton")}
           >
             Tarjeta - Buttons
           </button>
@@ -47,7 +47,7 @@ function ContentButtons() {
         <li>
           <button 
             className="btnStyle"
-            onClick={ () => handleSaludar("/buttonCustom")}
+            onClick={ () => handleRoutes("/buttonCustom")}
           >
             Buttons Custom
           </button>

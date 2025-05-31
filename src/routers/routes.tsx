@@ -10,7 +10,7 @@ import MainCodigo369 from "../pages/MainCodigo369";
 import Datos from "../pages/Datos"
 import Usuario from "../pages/Usuario";
 import CardEstado from "../pages/CardEstado";
-import CardArray from "../pages/CardArray";
+import CardArray from "../pages/cardArray"
 import Hooks from "../pages/Hooks";
 
 function MyRoutes() {

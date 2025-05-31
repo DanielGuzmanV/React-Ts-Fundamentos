@@ -1,9 +1,17 @@
 ## Curso de React con Typescript
-Curso realizado por `HolaMundo`
+Curso realizado por `HolaMundo` + `Codigo369`
+
 - [Canal de HolaMundo](https://www.youtube.com/@HolaMundoDev)
 - [Video del curso de React](https://www.youtube.com/watch?v=yIr_1CasXkM&t=1s)
 
-Todos los creditos al canal de `HolaMundo`
+#### Nota: 
+
+los conceptos de `Codigo369` estan en **Jsx (Javascript)** y yo lo hice en **Tsx (Typescript)**, no hay mucha diferencia solo que el Tsx todo viene con tipo de dato
+-[Canal de Codigo369](https://www.youtube.com/@Codigo369)
+-[Video del curso de React](https://youtu.be/0C5yFwOYhAk?si=neMcGP-fkSYG9Slc)
+
+
+Todos los creditos al canal de `HolaMundo` y `Codigo369`
 
 # React + TypeScript + Vite
 

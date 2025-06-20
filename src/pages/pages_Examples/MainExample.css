@@ -1,0 +1,36 @@
+
+.btnExample {
+  width: 170px;
+  height: auto;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px ;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  transition: 0.2s;
+  background-color: #ede2e2;
+}
+
+.btnExample:hover{
+  background-color: #c5c4c4;
+}
+
+.ulExample {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.contentExample {
+  background-color: rgb(189, 156, 213);
+  width: 70%;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+
+

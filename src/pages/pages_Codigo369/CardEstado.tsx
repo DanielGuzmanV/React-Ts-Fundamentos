@@ -1,4 +1,4 @@
-import ComponentCardEstadoy from "../components/Component_CardEstado"
+import ComponentCardEstadoy from "../../components/Component_CardEstado"
 
 
 function CardEstado() {

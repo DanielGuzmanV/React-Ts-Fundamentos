@@ -1,4 +1,4 @@
-import ButtonsHolaMundo from "../components/ButtonsHolaMundo"
+import ButtonsHolaMundo from "../../components/ButtonsHolaMundo"
 
 function MainHolamundo() {
   return (

@@ -1,4 +1,4 @@
-import Component_CardArray from "../components/Component_CardArray"
+import Component_CardArray from "../../components/Component_CardArray"
 
 function CardArray() {
   return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button from "../components/buttonsCard/Button"
-import CardButtonsBody, { CardButtonsTitle } from "../components/buttonsCard/CardButtonsBody"
-import ListButtons from "../components/buttonsCard/ListButtons"
+import Button from "../../components/buttonsCard/Button"
+import CardButtonsBody, { CardButtonsTitle } from "../../components/buttonsCard/CardButtonsBody"
+import ListButtons from "../../components/buttonsCard/ListButtons"
 
 
 function CardButtonsView() {

@@ -1,4 +1,4 @@
-import ComponentHooks from "../components/Component_Hooks"
+import ComponentHooks from "../../components/Component_Hooks"
 
 function Hooks() {
   return (

@@ -1,4 +1,4 @@
-import ButtonsCodigo369 from "../components/ButtonsCodigo369"
+import ButtonsCodigo369 from "../../components/ButtonsCodigo369"
 
 function MainCodigo369() {
   return (

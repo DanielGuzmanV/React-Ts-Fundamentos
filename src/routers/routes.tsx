@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import MainHolaMundo from "../pages/MainHolaMundo";
-import Saludar from "../pages/Saludo";
-import CardView from "../pages/CardView";
-import Card from "../pages/Card";
-import CardButtonsView from "../pages/CardButtonsView";
-import ButtonCustomView from "../pages/ButtonCustomView";
-import MainCodigo369 from "../pages/MainCodigo369";
-import Datos from "../pages/Datos"
-import Usuario from "../pages/Usuario";
-import CardEstado from "../pages/CardEstado";
-import CardArray from "../pages/cardArray"
-import Hooks from "../pages/Hooks";
+import MainHolaMundo from "../pages/pages_HolaMundo/MainHolaMundo";
+import Saludar from "../pages/pages_HolaMundo/Saludo";
+import CardView from "../pages/pages_HolaMundo/CardView";
+import Card from "../pages/pages_HolaMundo/Card";
+import CardButtonsView from "../pages/pages_HolaMundo/CardButtonsView";
+import ButtonCustomView from "../pages/pages_HolaMundo/ButtonCustomView";
+import MainCodigo369 from "../pages/pages_Codigo369/MainCodigo369";
+import Datos from "../pages/pages_Codigo369/Datos"
+import Usuario from "../pages/pages_Codigo369/Usuario";
+import CardEstado from "../pages/pages_Codigo369/CardEstado";
+import CardArray from "../pages/pages_Codigo369/cardArray"
+import Hooks from "../pages/pages_Codigo369/Hooks";
 import HomePage from "../pages/HomePage";
 
 function MyRoutes() {

@@ -22,6 +22,11 @@ function MainButtons() {
             Fundamentos Codigo369
           </button>
         </li>
+        <li>
+          <button className='btnStyle' onClick={() => hanldeRoutes('/mainExamples')}>
+            Mini project
+          </button>
+        </li>
       </ul>
 
     </div>

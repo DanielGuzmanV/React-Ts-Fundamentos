@@ -1,6 +1,6 @@
 
 .btnStyle {
-  min-width: 170px;
+  width: 170px;
   height: auto;
   padding: 10px;
   display: inline-block;
@@ -9,6 +9,12 @@
   white-space: normal;
   word-break: break-word;
   text-align: center;
+  transition: 0.2s;
+  background-color: #ede2e2;
+}
+
+.btnStyle:hover{
+  background-color: #c5c4c4;
 }
 
 .ulStyle {

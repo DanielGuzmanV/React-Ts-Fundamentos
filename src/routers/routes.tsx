@@ -5,13 +5,13 @@ import CardView from "../pages/CardView";
 import Card from "../pages/Card";
 import CardButtonsView from "../pages/CardButtonsView";
 import ButtonCustomView from "../pages/ButtonCustomView";
-import MainButtons from "../components/MainButtons";
 import MainCodigo369 from "../pages/MainCodigo369";
 import Datos from "../pages/Datos"
 import Usuario from "../pages/Usuario";
 import CardEstado from "../pages/CardEstado";
 import CardArray from "../pages/cardArray"
 import Hooks from "../pages/Hooks";
+import HomePage from "../pages/HomePage";
 
 function MyRoutes() {
   return (
@@ -19,7 +19,7 @@ function MyRoutes() {
       <Routes>
 
         {/* Lista de rutas: */}
-        <Route path="/" element = {<MainButtons/>}/>
+        <Route path="/" element = {<HomePage/>}/>
 
         <Route path="/holaMundo" element = {<MainHolaMundo/>}/>
         <Route path="/saludo" element = {<Saludar/>}/>
@@ -34,6 +34,7 @@ function MyRoutes() {
         <Route path="/cardEstado" element = {<CardEstado/>}/>
         <Route path="/cardArray" element = {<CardArray/>}/>
         <Route path="/hooks" element = {<Hooks/>}/>
+
 
 
       </Routes>

@@ -46,8 +46,8 @@ function MainExample1() {
       <ComponentForm onAgregarTarea={agregarTareas}/>
 
       {/* Tareas agregadas: */}
-      <div>
-        <h2>Tareas:</h2>
+      <div className={styled.sectionDiv}>
+        <h2 className={styled.subtitleDiv}>Tareas:</h2>
         <TareasAdd 
           tareas={tareas} 
           onEliminarTareas={eliminarTareas}
@@ -56,8 +56,8 @@ function MainExample1() {
       </div>
 
       {/* Tareas completadas: */}
-      <div>
-        <h2>Tareas Completadas:</h2>
+      <div className={styled.sectionDiv}>
+        <h2 className={styled.subtitleDiv}>Tareas Completadas:</h2>
         <TareasCompleted tareas={completed}/>
       </div>
 

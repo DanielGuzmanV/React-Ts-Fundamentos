@@ -1,0 +1,123 @@
+
+/* Estilos para el formulario: input y button */
+.formDiv {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.formDiv input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #acafb3;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.formDiv input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.formDiv button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.formDiv button:hover{
+  background-color: #1e40af;
+}
+/* ========================================================= */
+
+/* Estilos para las listas agregadas: */
+.contentListUl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tareaList {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background-color: #e4e6eb;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tareaList:hover{
+  transform: scale(1.02);
+  background-color: #e5e7eb;
+}
+
+.tareaTexto {
+  flex-grow: 1;
+  padding-right: 1rem;
+  word-break: break-word;
+}
+
+
+/* Agrupa botones para que estén juntos */
+.btnGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+/* Estilos para los botones de eliminar*/
+.btnListDel{
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btnListDel:hover{
+  background-color: #dc2626; 
+}
+
+/* Estilos para los botones de agregar */
+.btnListAdd {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btnListAdd:hover {
+  background-color: #047857; /* hover:bg-green-700 */
+}
+
+/* Estilos para listas completadas */
+.completedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.completedItem {
+  padding: 0.75rem;
+  background-color: #d1fae5; 
+  border-radius: 0.5rem;
+  color: #1f2937;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 0.75rem;
+  
+}
+
+.completedItem:hover {
+  background-color: #bbf7d0;
+}
+

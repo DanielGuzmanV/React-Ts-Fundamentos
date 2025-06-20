@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CardButtonCustom, { CardTitle } from "../../components/buttonCustom/CardButtonCustom"
-import Button from "../../components/buttonCustom/Button";
-import ListButtonCustom from "../../components/buttonCustom/ListButtonCuston";
+import CardButtonCustom, { CardTitle } from "../../components/components_holamundo/buttonCustom/CardButtonCustom"
+import Button from "../../components/components_holamundo/buttonCustom/Button";
+import ListButtonCustom from "../../components/components_holamundo/buttonCustom/ListButtonCuston";
 
 
 function ButtonCustomView() {

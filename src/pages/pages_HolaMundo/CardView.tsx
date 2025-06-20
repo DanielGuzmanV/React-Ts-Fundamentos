@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button from "../../components/cardview_list/Button";
-import CardList, { CardBody } from "../../components/cardview_list/CardList"
-import List from "../../components/cardview_list/List";
+import Button from "../../components/components_holamundo/cardview_list/Button";
+import CardList, { CardBody } from "../../components/components_holamundo/cardview_list/CardList"
+import List from "../../components/components_holamundo/cardview_list/List";
 
 
 function CardView() {

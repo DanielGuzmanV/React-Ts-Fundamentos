@@ -5,8 +5,7 @@ body {
 }
 
 .contentDiv {
-  max-width: 32rem;
-  width: 100%;
+  width: 50rem;
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;

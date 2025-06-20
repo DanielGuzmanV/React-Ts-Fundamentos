@@ -1,4 +1,4 @@
-import Component_Usuario from "../../components/Component_Usuario"
+import Component_Usuario from "../../components/components_codigo369/Component_Usuario"
 
 function Usuario() {
   return (

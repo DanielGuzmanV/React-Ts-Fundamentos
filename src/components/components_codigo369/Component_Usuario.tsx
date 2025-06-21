@@ -20,14 +20,18 @@ function Component_Usuario({nombre, apellido, edad, direccion}: Props) {
     <div>
       <h2 style={{color: 'red'}}>Uso de props</h2>
       
-      <h4 style={{color: 'blue'}}>Datos:</h4>
-      <p>Nombre: {nombre}</p>
-      <p>Apellido: {apellido}</p>
-      <p>Edad: {edad}</p>
+      <div style={{border:'3px solid black', borderRadius:'5px', margin: '10px', padding: '20px'}}>
+        <h4 style={{color: 'blue'}}>Datos:</h4>
+        <p>Nombre: {nombre}</p>
+        <p>Apellido: {apellido}</p>
+        <p>Edad: {edad}</p>
+      </div>
 
-      <h4 style={{color: 'blue'}}>Direccion:</h4>
-      <p>Calle: {direccion.calle}</p>
-      <p>Ciudad: {direccion.ciudad}</p>
+      <div style={{border:'3px solid black', borderRadius:'5px', margin: '10px', padding: '20px'}}>
+        <h4 style={{color: 'blue'}}>Direccion:</h4>
+        <p>Calle: {direccion.calle}</p>
+        <p>Ciudad: {direccion.ciudad}</p>
+      </div>
 
     </div>
   )

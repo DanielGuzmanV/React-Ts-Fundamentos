@@ -9,6 +9,7 @@ const Btn = styled.button <BtnProps>`
   background-color: ${(props) => props.isloadingBtn ? 'blue':'red'};
   padding: 25px 30px;
   margin: 4px;
+  border-radius: 10px
 `;
 
 type Props = {

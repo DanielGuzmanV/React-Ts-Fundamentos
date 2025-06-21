@@ -17,6 +17,7 @@ import MainExample1 from "../pages/pages_Examples/example-1/MainExample1";
 import MainAmazingCode from "../pages/pages_AmazingCode/MainAmazaingCode";
 import UsoHooks from "../pages/pages_AmazingCode/UsoHooks";
 import RenderList from "../pages/pages_AmazingCode/RenderList";
+import PropsPadreHijo from "../pages/pages_AmazingCode/PropsPadreHijo";
 
 function MyRoutes() {
   return (
@@ -46,7 +47,7 @@ function MyRoutes() {
         <Route path="/amazaing" element = {<MainAmazingCode/>}/>
         <Route path="/usoHooks" element = {<UsoHooks/>}/>
         <Route path="/renderList" element = {<RenderList/>}/>
-
+        <Route path="/propsPH" element={<PropsPadreHijo/>}/>
 
 
         {/* Rutas de ejemplos */}

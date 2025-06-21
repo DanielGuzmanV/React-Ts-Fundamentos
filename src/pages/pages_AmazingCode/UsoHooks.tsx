@@ -34,7 +34,7 @@ function UsoHooks() {
 
       <hr/>
       
-      <h2>Formario basico</h2>
+      <h2>Formulario basico</h2>
 
       <h3>Nombre: {nombreUser}</h3>
       <input

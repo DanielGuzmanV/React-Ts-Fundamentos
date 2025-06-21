@@ -21,6 +21,11 @@ function ButtonsAmazaingcode() {
             Render listas
           </button>
         </li>
+        <li>
+          <button className="btnStyle" onClick={() => handleRoutes('/propsPH')}>
+            Props Padre a Hijo
+          </button>
+        </li>
 
       </ul>
 

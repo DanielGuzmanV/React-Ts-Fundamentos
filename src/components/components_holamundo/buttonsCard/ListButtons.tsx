@@ -16,17 +16,13 @@ function ListButtons({dataProps, onSelect}: Props) {
   // ==========================================================
 
   return (
-    <ul
-        style={{
-          margin: '10px'
-        }}
-    >
+    <ul style={{margin: '10px',listStyle: 'none'}}>
 
       {dataProps.map( (elementos, idx) => (
 
         <li 
           onClick={() => handleClick(elementos, idx)} 
-          key={elementos} 
+          key={idx} 
           className={` ${index == idx ? "active" : ""}`}
         >
           {elementos}

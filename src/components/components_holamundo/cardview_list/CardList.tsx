@@ -13,10 +13,12 @@ function CardList(props: CardProps) {
     <div className="card"
       style={{
         width: '400px',
-        margin: '20px'
+        margin: '20px',
+        borderRadius: '20px',
+        border: '2px solid black'
       }}
     >
-      <div className="card-body" style={{backgroundColor: 'aquamarine'}}>
+      <div className="card-body" style={{backgroundColor: 'aquamarine', borderRadius: '20px'}}>
         { children }
       </div>
     </div>
@@ -37,8 +39,10 @@ export function CardBody(props: CardBodyProps) {
   const {title, text} = props;
   return (
     <Fragment>
-      <h5 className="card-title" style={{color: 'red'}}>{title}</h5>
-      <p className="card-text">{text}</p>
+      <div style={{border: '2px solid black', borderRadius: '10px', padding: '5px', margin: '10px'}}>
+        <h5 className="card-title" style={{color: 'red'}}><b>{title}</b></h5>
+        <p className="card-text">{text}</p>
+      </div>
     </Fragment>
   )
 }

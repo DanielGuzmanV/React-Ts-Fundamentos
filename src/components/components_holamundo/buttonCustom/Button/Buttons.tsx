@@ -15,13 +15,19 @@ type Props = {
   children: ReactNode;
   onClickButton: () => void;
   isLoadingBtn: boolean
+  fnIsBool: () => void;
 }
 
-function Button({children, onClickButton, isLoadingBtn}: Props) {
+function Button({children, onClickButton, isLoadingBtn, fnIsBool}: Props) {
+
+  const handleBtn =() => {
+    onClickButton()
+    fnIsBool()
+  }
 
   return (
     <Btn
-      onClick={onClickButton} isloadingBtn = {isLoadingBtn}
+      onClick={handleBtn} isloadingBtn = {isLoadingBtn}
     >
       {children}
     </Btn>

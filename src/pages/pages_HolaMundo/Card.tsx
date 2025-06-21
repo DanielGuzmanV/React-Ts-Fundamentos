@@ -4,27 +4,21 @@ function Card() {
   return (
     <div 
       className="card"
-      style={{
-        width: '400px',
-        padding: '20px'
-      }}
+      style={{width: '500px', padding: '20px'}}
     >
 
-    <div 
-      className="card-body"
-      style={{
-        backgroundColor: 'aquamarine'
-      }}
-    >
-      < CardBody/>
-    </div>
+      <div 
+        className="card-body"
+        style={{backgroundColor: 'aquamarine'}}
+      >
+        < CardBody/>
+      </div>
 
     </div>
   )
 }
 
 // Body de todo el card:
-
 function CardBody() {
   return (
     <Fragment>

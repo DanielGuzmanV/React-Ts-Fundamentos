@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 type Props = {
-  dataProps: string[];
+  dataList: string[];
   onSelect?: (elemento: string) => void;
 }
 
-function List({dataProps, onSelect}: Props) {
-
-  // Codigo para seleccionar un elemento en la lista
+function List({dataList, onSelect}: Props) {
   const [index, setIndex] = useState(0);
+  
+  // Codigo para seleccionar un elemento en la lista
   const handleClick = (elemento: string, indice: number) => {
     setIndex(indice);
     onSelect?.(elemento);
@@ -17,19 +17,16 @@ function List({dataProps, onSelect}: Props) {
 
   return (
     <ul className="list-group"
-        style={{
-          margin: '10px'
-        }}
-    >
+        style={{margin: '10px', padding: '20px'}}>
 
-      {dataProps.map( (elementos, idx) => (
+      {dataList.map( (elementos, idx) => (
 
         <li 
           onClick={() => handleClick(elementos, idx)} 
           key={elementos} 
           className={`list-group-item ${index == idx ? "active" : ""}`}
         >
-          {elementos}
+          <span>{idx}. -{elementos}</span>
         </li>
       ))}
 

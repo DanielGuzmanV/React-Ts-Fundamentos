@@ -13,10 +13,12 @@ function CardButtonsBody(props: CardProps) {
     <div className=""
       style={{
         width: '400px',
-        margin: '20px'
+        margin: '20px',
+        border: '2px solid black',
+        borderRadius: '20px'
       }}
     >
-      <div className="card-body" style={{backgroundColor: 'aquamarine'}}>
+      <div className="card-body" style={{backgroundColor: 'aquamarine', padding: '10px', borderRadius: '20px'}}>
         { children }
       </div>
     </div>

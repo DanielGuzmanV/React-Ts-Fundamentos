@@ -23,6 +23,11 @@ function MainButtons() {
           </button>
         </li>
         <li>
+          <button className='btnStyle' onClick={() => hanldeRoutes('/amazaing')}>
+            Fundamentos AMazaing
+          </button>
+        </li>
+        <li>
           <button className='btnStyle' onClick={() => hanldeRoutes('/mainExamples')}>
             Mini project
           </button>

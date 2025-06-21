@@ -23,19 +23,19 @@ function CardButtonsView() {
   return (
     <CardButtonsBody>
 
-    {/* Titulo: */}
-    <CardButtonsTitle title="Botones"/>
+      {/* Titulo: */}
+      <CardButtonsTitle title="Botones"/>
 
-    {/* Botones: */}
-    <Button onClickButton={addHandleClick}>
-      Agregar
-    </Button>
-    <Button onClickButton={deleteHandleClick}>
-      Eliminar
-    </Button>
+      {/* Botones: */}
+      <Button onClickButton={addHandleClick}>
+        Agregar
+      </Button>
+      <Button onClickButton={deleteHandleClick}>
+        Eliminar
+      </Button>
 
-    {/* Lista: */}
-    <ListButtons dataProps={data} />
+      {/* Lista: */}
+      <ListButtons dataProps={data} />
 
     </CardButtonsBody>
   )

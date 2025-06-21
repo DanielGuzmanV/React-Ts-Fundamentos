@@ -20,11 +20,12 @@ function CardView() {
 
   // Verifcarmos con un ternario si la lista esta vacia o no:
   const contentValue = arrString2.length !== 0
-  ? (< List dataProps={arrString2} onSelect={handleSelect2}/>)
+  ? (< List dataList={arrString2} onSelect={handleSelect2}/>)
   : (<p>Primera lista sin elementos</p>)
 
   // Realizamos un "useState" para el button:
   const [isLoading, setIsLoading] = useState(false);
+  
   const changeHandleClick = function() {
     return setIsLoading(!isLoading);
   }
@@ -33,15 +34,14 @@ function CardView() {
     < CardList>
       
       <CardBody title="Listas en React" text="Uso de listas basicas en React"/>
-
       {contentValue}
 
       {/* Tambien podemos usar "short circuit operator" */}
       {arrString1.length !== 0 && (
-        < List dataProps={arrString1} onSelect={handleSelect1}/>
+        < List dataList={arrString1} onSelect={handleSelect1}/>
       )}
 
-      < Button isLoadingButton={isLoading} onClickButton={changeHandleClick}>
+      <Button isLoadingButton={isLoading} onClickButton={changeHandleClick}>
         Enviar datos
       </Button>
 

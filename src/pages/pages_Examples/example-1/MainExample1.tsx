@@ -11,28 +11,28 @@ export interface TareaList {
 }
 
 function MainExample1() {
-  const [tareas, setTareas] = useState<TareaList[]>([]);
+  const [listaTareas, setTareas] = useState<TareaList[]>([]);
   const [completed, setCompleted] = useState<TareaList[]>([]);
 
-  const agregarTareas = (texto: string) => {
-    const nuevaTarea: TareaList = {
+  const agregarTareas = (valueText: string) => {
+    const nuevaListaTasks: TareaList = {
       id: Date.now(),
-      texto
+      texto: valueText,
     };
 
-    setTareas([...tareas, nuevaTarea])
+    setTareas([...listaTareas, nuevaListaTasks])
   };
 
   const eliminarTareas = (id: number) => {
-    setTareas(tareas.filter(value => value.id !== id));
+    setTareas(listaTareas.filter(value => value.id !== id));
   }
 
   const completarTareas = (id: number) => {
-    const newTarea = tareas.find(value => value.id === id);
+    const newTarea = listaTareas.find(value => value.id === id);
     if(!newTarea) return;
 
     // Eliminamos una tarea activa:
-    setTareas(tareas.filter(t => t.id !== id))
+    setTareas(listaTareas.filter(t => t.id !== id))
 
     // Agregamos la tarea a completadas:
     setCompleted([...completed, newTarea]);
@@ -49,7 +49,7 @@ function MainExample1() {
       <div className={styled.sectionDiv}>
         <h2 className={styled.subtitleDiv}>Tareas:</h2>
         <TareasAdd 
-          tareas={tareas} 
+          tareas={listaTareas} 
           onEliminarTareas={eliminarTareas}
           onCompletarTareas={completarTareas}
         />

@@ -37,9 +37,14 @@ function Component_CardArray() {
     pokemosArray.map((items, idx) => {
       return (
         <div className="mycard" key={idx}>
-          <h2>{items.nombre}</h2>
+          
+          <h2 className="titleImg">{items.nombre}</h2>
           <img className="imagen" src={items.image} alt="Imagen_de_un_pokemon"/>
-          <p>{items.descripcion}</p>
+          
+          <div className="description">
+            <p>{items.descripcion}</p>
+          </div>
+        
         </div>
       )
     })

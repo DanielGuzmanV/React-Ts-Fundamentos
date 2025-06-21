@@ -13,7 +13,7 @@ function MainExample() {
     <>
       <h1>Menu Ejemplos</h1>
 
-      <div className="contentExample">
+      <div className="contenMenuExam">
         <ul className="ulExample">
           <li>
             <button className="btnExample" onClick={() => handleRoutes('/example1')}>

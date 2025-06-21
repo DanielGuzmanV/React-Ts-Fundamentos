@@ -25,9 +25,9 @@
   align-items: center;
 }
 
-.contentExample {
-  background-color: rgb(189, 156, 213);
-  width: 70%;
+.contenMenuExam {
+  background-color: #bd9cd5;
+  width: 100%;
   display: inline-block;
   border-radius: 8px;
 }

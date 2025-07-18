@@ -5,14 +5,13 @@ function UsoHooks() {
   const [number, setNumber] = useState(0);
   const [nombreUser, setNombreUser] = useState('');
 
-  // Funcion para saludar:
-  const greatAlert = () => {
-    alert('Hola desde el alert con Ts');
-  }
-
   // Funcion para aumentar el valor:
-  const addValueNumber = () => {
-    setNumber(number + 1)
+  const addValueNumber = (value: number = 1) => {
+    setNumber(number + value)
+  }
+  // Funcion para eliminar el valor:
+  const deleteValueNumber = () => {
+    setNumber(0)
   }
 
   // Funcion para el nombre del usuario:
@@ -20,17 +19,20 @@ function UsoHooks() {
     setNombreUser(event.currentTarget.value)
   }
 
-  
-
   return (
-    <div>
-      <MenuHeader valuePar={number}/>
+    <div style={{
+      border: '2px solid black',
+      padding: '10px',
+      borderRadius: '10px'
+    }}>
+      <MenuHeader valuePar={number} valNumber={number} fnRestartValues={deleteValueNumber}/>
 
-      <h3 onClick={greatAlert}>
+      <h3 onClick={() => {alert('Hola desde el alert con Ts');}}>
         Saludar desde un alert
       </h3>
       <h4>Numero: {number}</h4>
-      <button onClick={addValueNumber}>Aumentar</button>
+      <button style={{margin: '5px', padding: '5px'}} onClick={() => addValueNumber()}>Aumentar + 1</button>
+      <button style={{margin: '5px', padding: '5px'}} onClick={() => addValueNumber(2)}>Aumentar + 2</button>
 
       <hr/>
       
